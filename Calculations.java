@@ -5,12 +5,19 @@ public class Calculations
 
 	Calculations(){};
 	
+	/**
+	 * Calculates the distance between two coordinates in a 2D plane
+	 * @return float
+	 */
 	public float DistanceBetween2DPoints(float x1, float y1, float x2, float y2)
 	{
 		return (float) Math.sqrt( ((x2 - x1) * (x2 - x1)) + ((y2 - y1) * (y2 - y1)) );
 	}
 
-	
+	/**
+	 * Calculates the distance between two coordinates in a 3D space
+	 * @return float
+	 */
 	public float DistanceBetween3DPoints(float x1, float y1, float z1, float x2, float y2, float z2)
 	{
 		return (float) Math.sqrt( ((x2 - x1) * (x2 - x1)) + ((y2 - y1) * (y2 - y1)) + ((z2 - z1) * (z2 - z1)) );
